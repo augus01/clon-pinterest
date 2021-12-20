@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon Pinterest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@4s00&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="">
+        <div class="barra-nav">
+            <div class="nav">
+                <div class="nav__container">
+
+                    <ul class="nav__lista-1">
+                        <li class="lista__hijo nav-1" id="logo">
+                            <div class="hijo__nav" id="caja-logo">
+                                <img src="img/pinterest-logo-8561DDA2E1-seeklogo.com.png" alt="" id="logo-pinterest">
+                            </div>
+
+                        </li>
+
+                        <li class="lista__hijo nav-1" id="inicio">
+                            <div class="hijo__nav">
+                                <div><span>Inicio<i class="fas fa-angle-down" id="flecha-abajo-1"></i></span></div>
+
+                            </div>
+                        </li>
+
+                        <li class="lista__hijo nav-1" id="hoy">
+                            <div class="hijo__nav">
+                                <div><span>Hoy</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <li class="lista__hijo nav-1" id="caja-home">
+                        <div class="hijo__nav  caja-interacion-3">
+                            <div><i class="fas fa-home"></i></div>
+                        </div>
+                    </li>
+
+                    <div class="contenedor__buscador nav-2 ">
+
+                        <div class="buscador">
+                            <div class="buscador-lupa">
+                                <i class="fas fa-search"></i>
+                            </div>
+
+                            <input type="text" placeholder="Buscar">
+                        </div>
+                    </div>
+
+                    <ul class="nav__lista-3">
+
+                        <li class="lista__hijo nav-3" id="buscador-nav-3">
+                            <div class="hijo__nav caja-interacion-3">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </li>
+
+                        <li class="lista__hijo nav-3" id="capana-notificaciones">
+                            <div class="hijo__nav caja-interacion-3">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                        </li>
+
+                        <li class="lista__hijo nav-3">
+                            <div class="hijo__nav caja-interacion-3">
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                        </li>
+
+                        <li class="lista__hijo nav-3">
+                            <div class="hijo__nav caja-interacion-3" id="caja-foto-perfil">
+                                <img src="img/Screenshot_20211114-004912_Brave.jpg" alt="" id="img-perfil">
+                            </div>
+                        </li>
+
+                        <li class="lista__hijo nav-3" id="caja-flecha-abajo">
+                            <div class="hijo__nav caja-interacion-3">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <section class="nav-responsive-cel">
+        <ul class="lista-nav-cel">
+            <li class="nav-1 lista__hijo-cel">
+                <div class="hijo__nav-2" id="Para-ti">
+                    <div><span>Para ti</span></div>
+                </div>
+            </li>
+
+            <li class="nav-1 lista__hijo-cel" id="hoy-2">
+                <div class="hijo__nav-2">
+                    <div><span>Hoy</span></div>
+                </div>
+            </li>
+            <li class="nav-1 lista__hijo-cel" id="pines-favs">
+                <div class="hijo__nav-2">
+                    <div><span>Mis Pines g...</span></div>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+    <main>
+        <section class="container">
+                <div class="contenedor-flex-fotos">
+                    <div class="columna-flex">
+                        <div class="contenido-principal" id="contenedor-1">
+                            <div class="contenido-fotos">   
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/godsuba-padoru.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                               
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="contenido-principal" id="contenedor-2">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/kobeni-asustada-paz.png" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="contenido-principal" id="contenedor-3">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/kon-arma.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-4">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/kobeni-presentación.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-6">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/mai-san-coneja.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columna-flex">
+                        <div class="contenido-principal" id="contenedor-7">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/general-kfc-buenos-dias.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-8">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/kaguya-sassy.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-9">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/kaguya-y-compañia.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-10">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/kobeni-gritando.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                               
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-11">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/kobeni-triste.png" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columna-flex" id="columna-3">
+                        <div class="contenido-principal" id="contenedor-12">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/rei-argentina.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+
+                                    </div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-13">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/makima-pose.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-14">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/miko-presentación.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                            
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-15">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <div class="contenido-fondo-claro">
+                                        <img src="img/fotos-pinterest/miko-xd.jpg" alt="">
+                                        <div class="contenido-fondo-negro">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-16">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/mina-sorpresa.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columna-flex" id="columna-4">
+                        <div class="contenido-principal" id="contenedor-17">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/nimu-like.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-18">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/nimu-sorprendida.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-19">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/nimu-triste.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-20">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/makima-con-duda.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                    </div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-21">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/rei-contenta.png" alt="">
+                                    <div class="contenido-fondo-negro">
+
+                                    </div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columna-flex" id="columna-5">
+                        <div class="contenido-principal" id="contenedor-22">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/rei-dibujo.jpg" alt="">
+                                    <div class="contenido-fondo-negro">
+                                       
+                                    </div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-23">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/rei-navida.jpg" alt="">
+                                    <div class="contenido-fondo-negro"></div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-24">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/rei-op.png" alt="">
+                                    <div class="contenido-fondo-negro"></div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-25">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/rei-pijama.png" alt="">
+                                    <div class="contenido-fondo-negro"></div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal" id="contenedor-26">
+                            <div class="contenido-fotos">
+                                <div class="foto">
+                                    <img src="img/fotos-pinterest/rei-paragua.png" alt="">
+                                    <div class="contenido-fondo-negro"></div>
+                                </div>
+                                
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columna-flex" id="columna-6">
+                        <div class="contenido-principal">
+                            <div class="contenido-fotos">
+                                <img src="img/fotos-pinterest/rei-sonrisa.jpg" alt="">
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal">
+                            <div class="contenido-fotos">
+                                <img src="img/fotos-pinterest/shinobu-esvainando-espada.jpg" alt="">
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal">
+                            <div class="contenido-fotos">
+                                <img src="img/fotos-pinterest/shinobu-sorprendida.jpg" alt="">
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal">
+                            <div class="contenido-fotos">
+                                <img src="img/fotos-pinterest/shogun-pensando.jpg" alt="">
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenido-principal">
+                            <div class="contenido-fotos">
+                                <img src="img/fotos-pinterest/starwars-visions.png" alt="">
+                                <div class="contenido-interaccion">
+                                    <div class="interaccion-arriba">
+                                        <div class="perfil-interaccion">
+                                            <a href="">Perfil<i class="fas fa-angle-down" id="flecha-abajo-2"></i> </a>
+                                        </div>
+                                        <div class="guardar-interaccion">
+                                            <a href="">Guardar</a>
+                                        </div>
+                                    </div>
+                                    <div class="interaccion-abajo">
+                                        <div class="abajo-derecha">
+                                            <div class="descargar">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="view-more">
+                                                <i class="fas fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/7038be4173.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

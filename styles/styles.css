@@ -1,0 +1,598 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* BARRA DE NAVEGACION */
+
+.barra-nav {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 10;
+}
+.nav{
+  height: 100%;
+}
+.nav-responsive-cel{
+  display: none;
+}
+.nav__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* PARTE 1 NAV */
+.nav__lista-1 {
+  height: 100%;
+  width: 300px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-1 {
+  width: 31%;
+  height: 60%;
+  border-radius: 45%;
+}
+.lista__hijo:hover .hijo__nav {
+  border-radius: 50px;
+  background-color: rgb(0, 0, 0, 0.06);
+}
+#caja-logo {
+  width: 50%;
+  height: 100%;
+}
+#caja-logo img {
+  width: 25px;
+  height: auto;
+}
+.lista__hijo:hover #caja-logo {
+  border-radius: 50%;
+}
+#inicio {
+  background-color: black;
+  border-radius: 50px;
+}
+#inicio span {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ,
+    Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+}
+#flecha-abajo-1 {
+  display: none;
+}
+#caja-home{
+  display: none;
+}
+/* PARTE 1 NAV */
+
+.lista__hijo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hijo__nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ,
+    Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+}
+
+/* PARTE 2 NAV */
+.nav-2 {
+  background-color: rgb(0, 0, 0, 0.06);
+  border-radius: 30px;
+  width: 90%;
+  height: 60%;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.buscador {
+  width: 100%;
+  height: 100%;
+  padding-left: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buscador-lupa {
+  position: relative;
+  z-index: 1;
+}
+.buscador input {
+  background-color: transparent;
+  color: #000;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  border: none;
+  margin: 0 0 0 1%;
+}
+input:focus {
+  outline: 2px auto lightblue;
+  padding-left: 1%;
+}
+/* PARTE 2 NAV */
+
+/* PARTE 3 NAV */
+.nav__lista-3 {
+  height: 100%;
+  width: 16%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-3 {
+  width: 300px;
+  height: 100%;
+  border-radius: 45%;
+}
+.caja-interacion-3 {
+  width: 70%;
+  height: 70%;
+}
+.caja-interacion-3 i {
+  font-size: 20px;
+}
+#caja-foto-perfil img {
+  width: 25px;
+  height: 25px;
+}
+#img-perfil {
+  border-radius: 50%;
+}
+#buscador-nav-3 {
+  display: none;
+}
+/* PARTE 3 NAV */
+
+/* BARRA DE NAVEGACION */
+
+/* CONTENEDOR CONTENIDO PRINCIPAL */
+main {
+  
+  padding: 6% 1% 0 1%;
+}
+.container {
+}
+.contenido-principal {
+  width: 100%;
+  border-radius: 15px;
+}
+.contenedor-flex-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.columna-flex {
+  width: 18%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#columna-6 {
+  display: none;
+}
+
+.contenido-fotos {
+  height: auto;
+  border-radius: 15px;
+  z-index: 1;
+}
+.contenido-fotos img {
+  width: 100%;
+  border-radius: 15px;
+}
+.contenido-interaccion {
+  display: none;
+}
+
+/* CONTENEDOR CONTENIDO PRINCIPAL */
+
+@media only screen and (max-width: 1000px) {
+  main{
+    .padding: 6% 1% 0 1%;
+  }
+  
+
+
+  .nav__lista-1 {
+    height: 100%;
+    width: 200px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .nav-2 {
+    background-color: rgb(0, 0, 0, 0.06);
+    border-radius: 30px;
+    width: 60%;
+    height: 60%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .caja-interacion-3 {
+    width: 70%;
+    height: 50%;
+  }
+  #img-perfil {
+    border-radius: 30px;
+  }
+  .nav__lista-3 {
+    height: 100%;
+    width: 150px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .contenedor-flex-fotos {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .columna-flex {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px 0 10px 0;
+  }
+  .contenido-principal {
+  }
+  #contenedor-16 {
+    display: none;
+  }
+  #columna-4 {
+    position: relative;
+    bottom: 100px;
+  }
+  #columna-6 {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 10px 3%;
+  }
+  header{
+    
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* .nav-responsive-cel {
+    display:block;
+    padding: 5% 5% 0% 0%;
+    width: 75%;
+    height: 30px;
+  }
+  .lista-nav-cel {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+  .lista__hijo-cel {
+    list-style-type: none;
+    width: auto;
+  }
+  .hijo__nav-2 {
+    width: 100%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+      "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3",
+      "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial,
+      sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+  } */
+  /* #pines-favs {
+    width: 38%;
+  }
+  #Para-ti {
+    padding-bottom: 10px;
+    border-radius: 1px;
+    border-bottom: 3px solid #000;
+  }
+  .nav__lista-1{
+    display: none;
+  }
+  .barra-nav {
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    width: auto;
+    margin-bottom: 5%;
+    border-radius: 50px;
+
+    
+  } 
+   #logo{
+    display: none;
+  } 
+   #inicio{
+    display: none;
+  } 
+  #caja-home{
+    display: flex;
+  }
+  
+   #logo{
+    display: none;
+  }
+   #inicio{
+    display: none;
+  } 
+  #logo{
+    display: none;
+  } 
+   #inicio{
+    display: none;
+  } */
+  .nav {
+    
+  }
+  .nav__container {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav__lista-3{
+    width: 10%;
+  }
+  .nav-3 {
+    width: 30%;
+    height: 100%;
+    border-radius: 45%;
+  }
+  
+  #caja-flecha-abajo{
+    display: none;
+  }
+  
+  #capana-notificaciones{
+    display: flex;
+  }
+  .nav__lista-1 {
+    width:35%;
+  }
+  .nav-2 {
+    display: none;
+  }
+  #hoy {
+    display: none;
+  }
+  #inicio {
+    background-color: white;
+  }
+  #inicio span {
+    width: 60px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #flecha-abajo-1 {
+    display: flex;
+  }
+  #buscador-nav-3 {
+    display: flex;
+  }
+  .nav__lista-3 {
+    width: 50%;
+  }
+  span i {
+    font-size: 20px;
+  }
+  .caja-interacion-3 i {
+    font-size: 20px;
+  }
+  .caja-interacion-3 {
+    width: 60%;
+    height: 50%;
+  }
+  #img-perfil {
+    border-radius: 30px;
+  }
+  .contenedor-flex-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .columna-flex {
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contenido-principal {
+  }
+
+  #columna-5 {
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .contenido-fotos img {
+    width: 100%;
+  }
+  #columna-4 {
+    bottom: 0px;
+  }
+  #columna-6 {
+    position: relative;
+    bottom: 50px;
+  }
+  #contenedor-16 {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  main {
+    z-index: 2;
+  }
+  .container {
+    z-index: 1;
+    padding: 1% 0%;
+    
+  }
+
+  .contenido-principal {
+      z-index: 1;
+      height:auto;
+  }
+  .nav {
+  }
+  
+  .columna-flex {
+    justify-content: space-around;
+    position: relative;
+    align-self:flex-start;
+  }
+  .contenido-fotos {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .contenido-interaccion {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0%;
+  }
+  .interaccion-arriba {
+    height: 30%;
+    padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .perfil-interaccion a {
+    text-decoration: none;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+      "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3",
+      "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial,
+      sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+  }
+  .perfil-interaccion i {
+    margin-left: 10px;
+  }
+  .guardar-interaccion {
+    width: 80px;
+    height: 40px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  }
+  .guardar-interaccion a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+      "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3",
+      "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial,
+      sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+  }
+  .interaccion-abajo {
+    height: 30%;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .abajo-derecha {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .descargar {
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+  .view-more {
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+  .descargar i {
+    color: #000;
+  }
+  .view-more i {
+    color: #000;
+  }
+  .contenido-principal:hover .contenido-interaccion {
+    transition:.5s ease-in-out;
+    display: flex;
+    z-index: 5;
+  }
+  .foto{
+    position: relative;
+  }
+  .contenido-fondo-negro{
+
+  }
+  .contenido-principal:hover .contenido-fondo-negro {
+    transition: .5s ease-in-out;
+    position: absolute;
+    top: 0;
+    height: 98.5%;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #000;
+    z-index: 4;
+    opacity: 0.7;
+  }
+}
